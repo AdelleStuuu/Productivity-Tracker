@@ -36,7 +36,7 @@ Partial Class Form1
         FlowLayoutPanel1 = New FlowLayoutPanel()
         Label4 = New Label()
         CalculateTotalScores = New Button()
-        TextBox1 = New TextBox()
+        PointBox = New TextBox()
         Label5 = New Label()
         CType(DayCounter, ComponentModel.ISupportInitialize).BeginInit()
         CType(HourCounter, ComponentModel.ISupportInitialize).BeginInit()
@@ -52,9 +52,9 @@ Partial Class Form1
         ' 
         ' DifficultySelect
         ' 
-        DifficultySelect.Location = New Point(323, 61)
+        DifficultySelect.Location = New Point(325, 55)
         DifficultySelect.Name = "DifficultySelect"
-        DifficultySelect.Size = New Size(121, 46)
+        DifficultySelect.Size = New Size(121, 35)
         DifficultySelect.TabIndex = 1
         DifficultySelect.Text = "Select Difficulty "
         DifficultySelect.UseVisualStyleBackColor = True
@@ -62,7 +62,7 @@ Partial Class Form1
         ' DifficultyCheck
         ' 
         DifficultyCheck.AutoSize = True
-        DifficultyCheck.Location = New Point(323, 31)
+        DifficultyCheck.Location = New Point(326, 25)
         DifficultyCheck.Name = "DifficultyCheck"
         DifficultyCheck.Size = New Size(72, 20)
         DifficultyCheck.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class Form1
         ' 
         ' DifficultySelector
         ' 
-        DifficultySelector.Location = New Point(401, 28)
+        DifficultySelector.Location = New Point(404, 22)
         DifficultySelector.Name = "DifficultySelector"
         DifficultySelector.ReadOnly = True
         DifficultySelector.Size = New Size(87, 27)
@@ -78,7 +78,7 @@ Partial Class Form1
         ' 
         ' DayCounter
         ' 
-        DayCounter.Location = New Point(372, 138)
+        DayCounter.Location = New Point(374, 128)
         DayCounter.Maximum = New Decimal(New Integer() {365, 0, 0, 0})
         DayCounter.Name = "DayCounter"
         DayCounter.Size = New Size(72, 27)
@@ -86,7 +86,7 @@ Partial Class Form1
         ' 
         ' HourCounter
         ' 
-        HourCounter.Location = New Point(507, 138)
+        HourCounter.Location = New Point(509, 128)
         HourCounter.Maximum = New Decimal(New Integer() {23, 0, 0, 0})
         HourCounter.Name = "HourCounter"
         HourCounter.Size = New Size(64, 27)
@@ -95,7 +95,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(322, 140)
+        Label1.Location = New Point(324, 130)
         Label1.Name = "Label1"
         Label1.Size = New Size(44, 20)
         Label1.TabIndex = 7
@@ -104,7 +104,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(450, 142)
+        Label2.Location = New Point(452, 132)
         Label2.Name = "Label2"
         Label2.Size = New Size(51, 20)
         Label2.TabIndex = 8
@@ -113,7 +113,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(323, 110)
+        Label3.Location = New Point(325, 100)
         Label3.Name = "Label3"
         Label3.Size = New Size(98, 20)
         Label3.TabIndex = 9
@@ -121,7 +121,7 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(322, 238)
+        Button1.Location = New Point(324, 228)
         Button1.Name = "Button1"
         Button1.Size = New Size(121, 30)
         Button1.TabIndex = 10
@@ -130,7 +130,7 @@ Partial Class Form1
         ' 
         ' TaskBox
         ' 
-        TaskBox.Location = New Point(323, 200)
+        TaskBox.Location = New Point(325, 190)
         TaskBox.Name = "TaskBox"
         TaskBox.Size = New Size(249, 27)
         TaskBox.TabIndex = 11
@@ -145,7 +145,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(323, 177)
+        Label4.Location = New Point(325, 167)
         Label4.Name = "Label4"
         Label4.Size = New Size(79, 20)
         Label4.TabIndex = 13
@@ -160,13 +160,13 @@ Partial Class Form1
         CalculateTotalScores.Text = "Calculate Scores"
         CalculateTotalScores.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' PointBox
         ' 
-        TextBox1.Location = New Point(106, 274)
-        TextBox1.Name = "TextBox1"
-        TextBox1.ReadOnly = True
-        TextBox1.Size = New Size(189, 27)
-        TextBox1.TabIndex = 15
+        PointBox.Location = New Point(106, 274)
+        PointBox.Name = "PointBox"
+        PointBox.ReadOnly = True
+        PointBox.Size = New Size(189, 27)
+        PointBox.TabIndex = 15
         ' 
         ' Label5
         ' 
@@ -183,7 +183,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(599, 346)
         Controls.Add(Label5)
-        Controls.Add(TextBox1)
+        Controls.Add(PointBox)
         Controls.Add(CalculateTotalScores)
         Controls.Add(Label4)
         Controls.Add(FlowLayoutPanel1)
@@ -220,7 +220,7 @@ Partial Class Form1
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Label4 As Label
     Friend WithEvents CalculateTotalScores As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PointBox As TextBox
     Friend WithEvents Label5 As Label
 
 End Class
