@@ -63,7 +63,7 @@ Public Class Form1
             End If
 
             If HourCounter.Value = 1 Then
-                hour = "hour"
+                hour = "Hour"
             Else
                 hour = "Hours"
             End If
