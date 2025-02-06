@@ -64,7 +64,7 @@ Public Class Form1
             If CheckList.GetItemChecked(i) Then
                 TotalScore += ScoreList(i)
                 CheckList.Items.RemoveAt(i)
-                PointBox.Text = TotalScore
+                PointBox.Text = Math.Round(TotalScore, 2)
                 ScoreList(i) = 0
             End If
         Next
@@ -77,4 +77,5 @@ Public Class Form1
         ReDim filteredArray(100)
         ArrayCount = CheckList.Items.Count
     End Sub
+
 End Class

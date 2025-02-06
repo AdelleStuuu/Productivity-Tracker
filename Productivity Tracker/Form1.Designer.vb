@@ -38,23 +38,26 @@ Partial Class Form1
         CalculateTotalScores = New Button()
         PointBox = New TextBox()
         Label5 = New Label()
+        Label6 = New Label()
         CType(DayCounter, ComponentModel.ISupportInitialize).BeginInit()
         CType(HourCounter, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' CheckList
         ' 
+        CheckList.Font = New Font("High Tower Text", 9F)
         CheckList.FormattingEnabled = True
-        CheckList.Location = New Point(12, 22)
+        CheckList.Location = New Point(106, 304)
         CheckList.Name = "CheckList"
-        CheckList.Size = New Size(283, 246)
+        CheckList.Size = New Size(317, 184)
         CheckList.TabIndex = 0
         ' 
         ' DifficultySelect
         ' 
-        DifficultySelect.Location = New Point(325, 55)
+        DifficultySelect.Font = New Font("High Tower Text", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DifficultySelect.Location = New Point(293, 175)
         DifficultySelect.Name = "DifficultySelect"
-        DifficultySelect.Size = New Size(121, 35)
+        DifficultySelect.Size = New Size(107, 31)
         DifficultySelect.TabIndex = 1
         DifficultySelect.Text = "Select Difficulty "
         DifficultySelect.UseVisualStyleBackColor = True
@@ -62,23 +65,26 @@ Partial Class Form1
         ' DifficultyCheck
         ' 
         DifficultyCheck.AutoSize = True
-        DifficultyCheck.Location = New Point(326, 25)
+        DifficultyCheck.Font = New Font("High Tower Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DifficultyCheck.Location = New Point(117, 149)
         DifficultyCheck.Name = "DifficultyCheck"
-        DifficultyCheck.Size = New Size(72, 20)
+        DifficultyCheck.Size = New Size(95, 20)
         DifficultyCheck.TabIndex = 3
         DifficultyCheck.Text = "Difficulty:"
         ' 
         ' DifficultySelector
         ' 
-        DifficultySelector.Location = New Point(404, 22)
+        DifficultySelector.BackColor = SystemColors.ControlLightLight
+        DifficultySelector.Font = New Font("High Tower Text", 9F)
+        DifficultySelector.Location = New Point(218, 144)
         DifficultySelector.Name = "DifficultySelector"
         DifficultySelector.ReadOnly = True
-        DifficultySelector.Size = New Size(87, 27)
+        DifficultySelector.Size = New Size(286, 25)
         DifficultySelector.TabIndex = 4
         ' 
         ' DayCounter
         ' 
-        DayCounter.Location = New Point(374, 128)
+        DayCounter.Location = New Point(267, 221)
         DayCounter.Maximum = New Decimal(New Integer() {365, 0, 0, 0})
         DayCounter.Name = "DayCounter"
         DayCounter.Size = New Size(72, 27)
@@ -86,7 +92,7 @@ Partial Class Form1
         ' 
         ' HourCounter
         ' 
-        HourCounter.Location = New Point(509, 128)
+        HourCounter.Location = New Point(420, 221)
         HourCounter.Maximum = New Decimal(New Integer() {23, 0, 0, 0})
         HourCounter.Name = "HourCounter"
         HourCounter.Size = New Size(64, 27)
@@ -95,44 +101,48 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(324, 130)
+        Label1.Font = New Font("High Tower Text", 10.2F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(218, 223)
         Label1.Name = "Label1"
-        Label1.Size = New Size(44, 20)
+        Label1.Size = New Size(48, 20)
         Label1.TabIndex = 7
         Label1.Text = "Days:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(452, 132)
+        Label2.Font = New Font("High Tower Text", 10.2F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(363, 225)
         Label2.Name = "Label2"
-        Label2.Size = New Size(51, 20)
+        Label2.Size = New Size(54, 20)
         Label2.TabIndex = 8
         Label2.Text = "Hours:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(325, 100)
+        Label3.Font = New Font("High Tower Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(80, 223)
         Label3.Name = "Label3"
-        Label3.Size = New Size(98, 20)
+        Label3.Size = New Size(121, 20)
         Label3.TabIndex = 9
         Label3.Text = "Time Alloted:"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(324, 228)
+        Button1.Location = New Point(106, 268)
         Button1.Name = "Button1"
-        Button1.Size = New Size(121, 30)
+        Button1.Size = New Size(317, 30)
         Button1.TabIndex = 10
         Button1.Text = "Add to list "
         Button1.UseVisualStyleBackColor = True
         ' 
         ' TaskBox
         ' 
-        TaskBox.Location = New Point(325, 190)
+        TaskBox.Font = New Font("High Tower Text", 9F)
+        TaskBox.Location = New Point(218, 106)
         TaskBox.Name = "TaskBox"
-        TaskBox.Size = New Size(249, 27)
+        TaskBox.Size = New Size(286, 25)
         TaskBox.TabIndex = 11
         ' 
         ' FlowLayoutPanel1
@@ -145,15 +155,17 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(325, 167)
+        Label4.Font = New Font("High Tower Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(34, 107)
         Label4.Name = "Label4"
-        Label4.Size = New Size(79, 20)
+        Label4.Size = New Size(178, 20)
         Label4.TabIndex = 13
-        Label4.Text = "Insert Task:"
+        Label4.Text = "Insert Name of Task:"
         ' 
         ' CalculateTotalScores
         ' 
-        CalculateTotalScores.Location = New Point(85, 307)
+        CalculateTotalScores.Font = New Font("High Tower Text", 10.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        CalculateTotalScores.Location = New Point(207, 506)
         CalculateTotalScores.Name = "CalculateTotalScores"
         CalculateTotalScores.Size = New Size(121, 30)
         CalculateTotalScores.TabIndex = 14
@@ -162,26 +174,42 @@ Partial Class Form1
         ' 
         ' PointBox
         ' 
-        PointBox.Location = New Point(106, 274)
+        PointBox.BackColor = Color.Thistle
+        PointBox.Font = New Font("High Tower Text", 9F)
+        PointBox.Location = New Point(179, 558)
         PointBox.Name = "PointBox"
         PointBox.ReadOnly = True
-        PointBox.Size = New Size(189, 27)
+        PointBox.Size = New Size(275, 25)
         PointBox.TabIndex = 15
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(12, 277)
+        Label5.Font = New Font("High Tower Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(59, 559)
         Label5.Name = "Label5"
-        Label5.Size = New Size(88, 20)
+        Label5.Size = New Size(114, 20)
         Label5.TabIndex = 16
         Label5.Text = "Total Points:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Freestyle Script", 30F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = SystemColors.ActiveCaptionText
+        Label6.Location = New Point(106, 34)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(321, 59)
+        Label6.TabIndex = 17
+        Label6.Text = "Productivity Tracker"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(599, 346)
+        BackColor = Color.LightPink
+        ClientSize = New Size(534, 629)
+        Controls.Add(Label6)
         Controls.Add(Label5)
         Controls.Add(PointBox)
         Controls.Add(CalculateTotalScores)
@@ -199,7 +227,7 @@ Partial Class Form1
         Controls.Add(DifficultySelect)
         Controls.Add(CheckList)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Productivity Tracker"
         CType(DayCounter, ComponentModel.ISupportInitialize).EndInit()
         CType(HourCounter, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
@@ -222,5 +250,6 @@ Partial Class Form1
     Friend WithEvents CalculateTotalScores As Button
     Friend WithEvents PointBox As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 
 End Class
